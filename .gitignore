@@ -5,3 +5,7 @@ produto-01/
 *.mp4
 *.mp3
 autopilot/
+prod_*/
+links_produtos.txt
+.env
+*.log
