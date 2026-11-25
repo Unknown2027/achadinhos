@@ -1,208 +1,601 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vale a pena? Maquininha Dragão por R$ 26,11 (Estoque no Brasil)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Achados Virais Brasil • Ofertas Verificadas com Desconto e Frete Grátis</title>
+  <meta name="description" content="Curadoria diária de produtos virais úteis com desconto real, frete grátis e envio com rastreio para todo o Brasil.">
   <style>
-    :root { --bg: #0b0f19; --card: #131a2a; --border: #232f46; --text: #f1f5f9; --muted: #94a3b8; --green: #22c55e; --amber: #f59e0b; }
-    * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 16px 16px 90px; line-height: 1.5; }
-    .wrap { max-width: 460px; margin: 0 auto; }
-    .top-bar { background: #1e293b; border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; font-size: 0.8rem; color: #cbd5e1; display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
-    .tag-br { background: rgba(34, 197, 94, 0.15); color: #4ade80; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
-    .hero { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
-    .product-img { width: 100%; max-height: 300px; object-fit: contain; background: #fff; border-radius: 12px; padding: 10px; margin-bottom: 14px; }
-    .rating { color: var(--amber); font-size: 0.88rem; font-weight: 600; margin-bottom: 6px; }
-    h1 { font-size: 1.28rem; line-height: 1.3; margin: 0 0 10px; }
-    .subtitle { color: var(--muted); font-size: 0.92rem; margin: 0 0 16px; }
-    .price-box { background: #0f172a; border: 1px dashed #334155; border-radius: 12px; padding: 14px; margin-bottom: 16px; }
-    .old { text-decoration: line-through; color: #64748b; font-size: 0.9rem; }
-    .now { font-size: 1.75rem; font-weight: 800; color: #38bdf8; display: block; line-height: 1.1; margin: 4px 0; }
-    .urgency { font-size: 0.8rem; color: #fbbf24; font-weight: 600; }
-    .btn { display: block; width: 100%; text-align: center; background: var(--green); color: #052e16; font-weight: 800; font-size: 1.02rem; text-decoration: none; padding: 15px; border-radius: 12px; box-shadow: 0 6px 20px rgba(34, 197, 94, 0.25); }
-    .section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; margin-top: 14px; }
-    .section h2 { font-size: 1.05rem; margin: 0 0 12px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
-    td, th { padding: 9px 8px; border-bottom: 1px solid var(--border); text-align: left; }
-    th { color: var(--muted); font-weight: 600; }
-    .win { color: #4ade80; font-weight: 700; }
-    .list { margin: 0; padding-left: 18px; color: #cbd5e1; font-size: 0.9rem; }
-    .list li { margin-bottom: 8px; }
-    .review { border-top: 1px solid var(--border); padding-top: 10px; margin-top: 10px; font-size: 0.86rem; color: #cbd5e1; }
-    .review:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
-    .review-author { color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
-    .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(11, 15, 25, 0.95); backdrop-filter: blur(8px); border-top: 1px solid var(--border); padding: 10px 16px; display: flex; justify-content: center; }
-    .sticky-cta .btn { max-width: 460px; padding: 13px; font-size: 0.95rem; }
+    :root {
+      --bg: #070b14;
+      --surface: #111827;
+      --surface-alt: #0f172a;
+      --border: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --green: #22c55e;
+      --green-dark: #16a34a;
+      --gold: #f59e0b;
+      --red: #dc2626;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #111c33 0%, var(--bg) 48%);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    .urgency-bar {
+      background: linear-gradient(90deg, #b91c1c, #dc2626, #b91c1c);
+      color: #fff;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.35px;
+      padding: 9px 12px;
+      text-transform: uppercase;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+    }
+    .shell {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+    .hero-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 24px;
+    }
+    .verified-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(34, 197, 94, 0.12);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero-header h1 {
+      font-size: clamp(1.55rem, 3.4vw, 2.35rem);
+      line-height: 1.2;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: -0.4px;
+    }
+    .hero-header p {
+      color: var(--muted);
+      font-size: 0.98rem;
+      margin-bottom: 18px;
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+    .trust-item {
+      background: rgba(17, 24, 39, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 0.8rem;
+      color: #e2e8f0;
+    }
+    .trust-item strong {
+      display: block;
+      color: #fff;
+      font-size: 0.85rem;
+    }
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .filter-btn {
+      background: var(--surface);
+      color: #cbd5e1;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--green);
+      color: #052e16;
+      border-color: var(--green);
+    }
+    .vitrine-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: #334155;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    }
+    .product-card.featured {
+      border: 2px solid rgba(245, 158, 11, 0.75);
+      box-shadow: 0 12px 34px rgba(245, 158, 11, 0.14);
+    }
+    .media-wrap {
+      position: relative;
+      display: block;
+      background: #0b1120;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      text-decoration: none;
+    }
+    .product-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .product-card:hover .product-img {
+      transform: scale(1.04);
+    }
+    .ribbon {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      z-index: 2;
+    }
+    .ribbon-gold {
+      background: linear-gradient(90deg, #f59e0b, #d97706);
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+    }
+    .ribbon-green {
+      background: rgba(15, 23, 42, 0.9);
+      color: #4ade80;
+      border: 1px solid rgba(74, 222, 128, 0.4);
+    }
+    .off-pill {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #dc2626;
+      color: #fff;
+      font-size: 0.74rem;
+      font-weight: 900;
+      padding: 5px 9px;
+      border-radius: 8px;
+      z-index: 2;
+    }
+    .demo-pill {
+      position: absolute;
+      bottom: 10px;
+      left: 12px;
+      background: rgba(7, 11, 20, 0.86);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      font-size: 0.73rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      backdrop-filter: blur(6px);
+    }
+    .mini-thumbs {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px;
+      padding: 4px 16px 0;
+    }
+    .mini-thumbs img {
+      width: 100%;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .card-body {
+      padding: 16px 18px 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .stars { color: #facc15; letter-spacing: 1px; }
+    .risk-tag {
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    .card-body h2 {
+      font-size: 1.12rem;
+      line-height: 1.3;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .price-panel {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 14px;
+    }
+    .anchor-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      margin-bottom: 2px;
+    }
+    .old-price {
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+    .pix-tag {
+      color: #4ade80;
+      font-weight: 700;
+      font-size: 0.74rem;
+    }
+    .now-price {
+      font-size: 1.42rem;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+    .shipping-line {
+      font-size: 0.76rem;
+      color: #cbd5e1;
+      margin-top: 4px;
+    }
+    .btn-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      width: 100%;
+      background: linear-gradient(180deg, var(--green) 0%, var(--green-dark) 100%);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 12px 14px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(34, 197, 94, 0.28);
+      transition: filter 0.15s ease, transform 0.15s ease;
+    }
+    .btn-cta:hover { filter: brightness(1.06); }
+    .btn-cta:active { transform: scale(0.98); }
+    .footer-note {
+      text-align: center;
+      color: #64748b;
+      font-size: 0.78rem;
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 640px) {
+      .trust-grid { grid-template-columns: 1fr; gap: 8px; }
+      .vitrine-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261125_160047.jpg" alt="Jianpai-Escova de dentes elétrica sônica para: Alívio e Solução Imediata">
-      <div class="rating">★★★★★ Achado Viral • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Jianpai-Escova de dentes elétrica sônica para: Alívio e Solução Imediata</h2>
-      <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Oferta Especial • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c34R5kmz" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261124_220048.jpg" alt="Domen bloqueio de corrente anti-roubo de bicic: Alívio e Solução Imediata">
-      <div class="rating">★★★★★ Achado Viral • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Domen bloqueio de corrente anti-roubo de bicic: Alívio e Solução Imediata</h2>
-      <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Oferta Especial • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3qBmRdr" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261123_025408.jpg" alt="Corretor de postura ajustável: Alívio e Solução Imediata">
-      <div class="rating">★★★★★ Achado Viral • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Corretor de postura ajustável: Alívio e Solução Imediata</h2>
-      <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Oferta Especial • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c45FQ17f" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261123_021409.jpg" alt="Smartphone HONOR 8X Firmware Global CPU Haisi Qili — Envio Rápido do Brasil">
-      <div class="rating">★★★★★ Achado Viral • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Smartphone HONOR 8X Firmware Global CPU Haisi Qili — Envio Rápido do Brasil</h2>
-      <p class="subtitle">Já está em estoque nacional com frete grátis e zero risco de taxa alfandegária.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Oferta Especial • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3zrMxTr" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261123_005934.jpg" alt="Bluetooth 5.3 fone de ouvido clipe fones tws sem f — Envio Rápido do Brasil">
-      <div class="rating">★★★★★ Achado Viral • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Bluetooth 5.3 fone de ouvido clipe fones tws sem f — Envio Rápido do Brasil</h2>
-      <p class="subtitle">Já está em estoque nacional com frete grátis e zero risco de taxa alfandegária.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Oferta Especial • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c4UmbkHn" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261123_002326.jpg" alt="Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia">
-      <div class="rating">★★★★★ Oferta Verificada • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia</h2>
-      <p class="subtitle">Envio rápido direto do estoque no Brasil, com frete grátis e sem taxa extra.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Desconto Ativo • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-
-    <div class="hero" style="margin-top:16px;">
-      <img class="product-img" src="./prod_20261123_001531.jpg" alt="Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia">
-      <div class="rating">★★★★★ Oferta Verificada • Estoque no Brasil</div>
-      <h2 style="font-size:1.2rem; margin:0 0 8px;">Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia</h2>
-      <p class="subtitle">Envio rápido direto do estoque no Brasil, com frete grátis e sem taxa extra.</p>
-      <div class="price-box">
-        <span class="now" style="font-size:1.35rem;">Desconto Ativo • Frete Grátis</span>
-      </div>
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-    
-    <div class="top-bar">
-      <span>Achadinho Verificado #01</span>
-      <span class="tag-br">🇧🇷 Envio do Brasil • Sem Taxa</span>
-    </div>
-
-    <div class="hero">
-      <img class="product-img" src="./produto1.jpg" alt="Maquininha Barbeador Elétrico Dragão">
-      <div class="rating">★★★★★ 4.5 (5.096 avaliações • +10.000 vendidos)</div>
-      <h1>A maquininha de R$ 26 que aposenta as idas semanais ao barbeiro</h1>
-      <p class="subtitle">Faz o pezinho, desenha a barba e apara o cabelo em casa em 5 minutos — sem puxar o fio e sem esperar encomenda internacional.</p>
-
-      <div class="price-box">
-        <span class="old">De R$ 52,22 por apenas</span>
-        <span class="now">R$ 26,11 <small style="font-size:0.85rem; color:#94a3b8; font-weight:500;">(Frete Grátis)</small></span>
-        <span class="urgency">⚡ Oferta Black Friday válida até 04/12 ou acabar o lote local</span>
-      </div>
-
-      <a class="btn" href="https://s.click.aliexpress.com/e/_c3JkW8cl" target="_blank" rel="noopener">
-        CONFERIR DESCONTO NO ALIEXPRESS →
-      </a>
-    </div>
-
-    <div class="section">
-      <h2>A conta é simples:</h2>
-      <table>
-        <tr>
-          <th>Opção</th>
-          <th>Custo em 3 meses</th>
-        </tr>
-        <tr>
-          <td>Barbearia (2x por mês a R$ 35)</td>
-          <td style="color:#f87171;">R$ 210,00</td>
-        </tr>
-        <tr>
-          <td>Maquininha Dragão (pagamento único)</td>
-          <td class="win">R$ 26,11 (Economia de R$ 183)</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="section">
-      <h2>O que vem na caixa + Garantia</h2>
-      <ul class="list">
-        <li><strong>Lâmina em T de precisão:</strong> ideal para acabamento rente sem irritar a pele.</li>
-        <li><strong>Kit completo:</strong> 4 pentes de altura, cabo carregador USB, escova e óleo lubrificante.</li>
-        <li><strong>Entrega rápida (até 7 dias):</strong> sai direto do armazém no Brasil, zero risco de taxa alfandegária.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Quem comprou aprovou</h2>
-      <div class="review">
-        "Chegou em 4 dias aqui em SP. Pelo preço achei que fosse fraca, mas corta muito bem e a bateria dura bastante."
-        <div class="review-author">Carlos M. — Compra verificada</div>
-      </div>
-      <div class="review">
-        "Só para fazer o pezinho e alinhar a barba toda semana já se pagou no primeiro uso."
-        <div class="review-author">Rafael S. — Compra verificada</div>
-      </div>
-    </div>
+  <div class="urgency-bar" id="urgency-bar">
+    ⚡ LOTE PROMOCIONAL ATIVO HOJE • DESCONTOS E FRETE GRÁTIS LIBERADOS ENQUANTO DURAR O ESTOQUE
   </div>
 
-  <div class="sticky-cta">
-    <a class="btn" href="https://s.click.aliexpress.com/e/_c3JkW8cl" target="_blank" rel="noopener">
-      GARANTIR POR R$ 26,11 (FRETE GRÁTIS) →
-    </a>
-  </div>
+  <main class="shell">
+    <header class="hero-header">
+      <div class="verified-pill">🇧🇷 CURADORIA VERIFICADA • LINKS OFICIAIS COM GARANTIA</div>
+      <h1>Achados Virais que Resolvem Problemas Reais sem Pesar no Bolso</h1>
+      <p>Selecionamos apenas utilidades práticas de baixo risco com alta avaliação, entrega rastreada para todo o Brasil e desconto direto na loja oficial.</p>
+
+      <div class="trust-grid">
+        <div class="trust-item">
+          <strong>💸 Produtos de Baixo Risco</strong>
+          Ofertas acessíveis para testar sem comprometer o orçamento.
+        </div>
+        <div class="trust-item">
+          <strong>🔒 Checkout 100% Oficial</strong>
+          Pagamento seguro via PIX ou Cartão direto no AliExpress.
+        </div>
+        <div class="trust-item">
+          <strong>📦 Rastreio e Reembolso</strong>
+          Acompanhe o pedido passo a passo com proteção ao comprador.
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" type="button" onclick="filtrarVitrine('todos', this)">🔥 Todos os Achados</button>
+        <button class="filter-btn" type="button" onclick="filtrarVitrine('mais-vendido', this)">🏆 Mais Vendidos</button>
+        <button class="filter-btn" type="button" onclick="filtrarVitrine('baixo-risco', this)">🛡️ Ofertas de Baixo Risco</button>
+      </div>
+    </header>
+
+    <section class="vitrine-grid" id="vitrine-grid"><!-- CARDS_AQUI -->
+
+    <article class="product-card featured" data-cat="mais-vendido baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c34R5kmz" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-gold">🏆 MAIS VENDIDO #1</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261125_160047.jpg" alt="Jianpai-Escova de dentes elétrica sônica para" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Jianpai-Escova de dentes elétrica sônica para</h2>
+        <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c34R5kmz" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c3qBmRdr" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261124_220048.jpg" alt="Domen bloqueio de corrente anti-roubo de bicic" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Domen bloqueio de corrente anti-roubo de bicic</h2>
+        <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c3qBmRdr" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c45FQ17f" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261123_025408.jpg" alt="Corretor de postura ajustável" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Corretor de postura ajustável</h2>
+        <p class="subtitle">Últimas unidades em estoque no Brasil com frete grátis e zero taxa alfandegária.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c45FQ17f" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c3zrMxTr" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261123_021409.jpg" alt="Smartphone HONOR 8X Firmware Global CPU Haisi Qili — Envio Rápido do Brasil" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Smartphone HONOR 8X Firmware Global CPU Haisi Qili — Envio Rápido do Brasil</h2>
+        <p class="subtitle">Já está em estoque nacional com frete grátis e zero risco de taxa alfandegária.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c3zrMxTr" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c4UmbkHn" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261123_005934.jpg" alt="Bluetooth 5.3 fone de ouvido clipe fones tws sem f — Envio Rápido do Brasil" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Bluetooth 5.3 fone de ouvido clipe fones tws sem f — Envio Rápido do Brasil</h2>
+        <p class="subtitle">Já está em estoque nacional com frete grátis e zero risco de taxa alfandegária.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c4UmbkHn" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261123_002326.jpg" alt="Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia</h2>
+        <p class="subtitle">Envio rápido direto do estoque no Brasil, com frete grátis e sem taxa extra.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+
+    <article class="product-card" data-cat="baixo-risco">
+      <a class="media-wrap" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="nofollow sponsored noopener">
+        <span class="ribbon ribbon-green">🔥 ALTA PROCURA</span>
+        <span class="off-pill">ATÉ 55% OFF</span>
+        <img class="product-img" src="./prod_20261123_001531.jpg" alt="Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia" loading="lazy">
+        <span class="demo-pill">✔ Oferta Verificada Brasil</span>
+      </a>
+      
+      <div class="card-body">
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span>4.9 • Estoque Brasil</span>
+          <span class="risk-tag">🛡️ Baixo Risco</span>
+        </div>
+        <h2>Suporte de Telefone Magnético de Silicone Dupla Face co — Praticidade no Dia a Dia</h2>
+        <p class="subtitle">Envio rápido direto do estoque no Brasil, com frete grátis e sem taxa extra.</p>
+        <div class="price-panel">
+          <div class="anchor-line">
+            <span class="old-price">De R$ 89,90</span>
+            <span class="pix-tag">PIX ou Cartão</span>
+          </div>
+          <div class="now-price">Oferta Relâmpago Ativa</div>
+          <div class="shipping-line">✔ Frete Grátis Liberado • ✔ Garantia de Reembolso</div>
+        </div>
+        <a class="btn-cta" href="https://s.click.aliexpress.com/e/_c4rFDoyz" target="_blank" rel="nofollow sponsored noopener">
+          GARANTIR DESCONTO NO SITE OFICIAL →
+        </a>
+      </div>
+    </article>
+    
+    </section>
+
+    <footer class="footer-note">
+      Curadoria independente de ofertas e utilidades • Todos os links direcionam para anúncios oficiais com garantia de entrega.
+    </footer>
+  </main>
+
+  <script>
+    (function() {
+      const hoje = new Date().toLocaleDateString('pt-BR');
+      const bar = document.getElementById('urgency-bar');
+      if (bar) {
+        bar.textContent = `⚡ LOTE PROMOCIONAL VÁLIDO HOJE (${hoje}) • FRETE GRÁTIS E DESCONTO ATIVOS ENQUANTO DURAR O ESTOQUE`;
+      }
+    })();
+
+    function filtrarVitrine(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+      document.querySelectorAll('.product-card').forEach(card => {
+        const cats = (card.getAttribute('data-cat') || '').split(' ');
+        card.style.display = (cat === 'todos' || cats.includes(cat)) ? 'flex' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
